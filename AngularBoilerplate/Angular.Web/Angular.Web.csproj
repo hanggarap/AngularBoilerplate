@@ -25,6 +25,10 @@
     <None Remove="karma.conf.js" />
     <None Remove="protractor.conf.js" />
     <None Remove="README.md" />
+    <None Remove="src\app\main\index.ts" />
+    <None Remove="src\app\main\main.module.ts" />
+    <None Remove="src\app\shared\index.ts" />
+    <None Remove="src\app\shared\shared.module.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Angular.Common\Angular.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\main\index.ts" />
+    <TypeScriptCompile Include="src\app\main\main.module.ts" />
+    <TypeScriptCompile Include="src\app\shared\index.ts" />
+    <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
   </ItemGroup>
 
 </Project>
