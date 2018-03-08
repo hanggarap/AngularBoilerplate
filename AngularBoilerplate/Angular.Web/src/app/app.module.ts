@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MainModule } from './main';
-import { SharedModule } from './shared';
-
+import { RouterModule } from '@angular/router'
 import { AppComponent } from './app.component';
+import { routes } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -11,8 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    SharedModule,
-    MainModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes, { useHash: true }),
   ],
   providers: [],
   bootstrap: [AppComponent]

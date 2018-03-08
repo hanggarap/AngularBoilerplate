@@ -25,7 +25,9 @@
     <None Remove="karma.conf.js" />
     <None Remove="protractor.conf.js" />
     <None Remove="README.md" />
+    <None Remove="src\app\app.routing.ts" />
     <None Remove="src\app\main\index.ts" />
+    <None Remove="src\app\main\main.component.ts" />
     <None Remove="src\app\main\main.module.ts" />
     <None Remove="src\app\shared\index.ts" />
     <None Remove="src\app\shared\shared.content.ts" />
@@ -51,7 +53,9 @@
     <ProjectReference Include="..\Angular.Common\Angular.Common.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\app\app.routing.ts" />
     <TypeScriptCompile Include="src\app\main\index.ts" />
+    <TypeScriptCompile Include="src\app\main\main.component.ts" />
     <TypeScriptCompile Include="src\app\main\main.module.ts" />
     <TypeScriptCompile Include="src\app\shared\index.ts" />
     <TypeScriptCompile Include="src\app\shared\shared.content.ts" />
